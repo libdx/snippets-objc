@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  log.h
 //  snippets-objc
 //
 //  Created by Alexander Ignatenko on 10/22/12.
