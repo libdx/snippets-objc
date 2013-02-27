@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1372DF916DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m in Sources */ = {isa = PBXBuildFile; fileRef = E1372DF816DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m */; };
 		E1EA5479165E3F4200EF5B46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EA5478165E3F4200EF5B46 /* UIKit.framework */; };
 		E1EA547B165E3F4200EF5B46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EA547A165E3F4200EF5B46 /* Foundation.framework */; };
 		E1EA547D165E3F4200EF5B46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EA547C165E3F4200EF5B46 /* CoreGraphics.framework */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1372DF716DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Multitasking.h"; sourceTree = "<group>"; };
+		E1372DF816DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Multitasking.m"; sourceTree = "<group>"; };
 		E1EA5474165E3F4200EF5B46 /* snippets-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snippets-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EA5478165E3F4200EF5B46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E1EA547A165E3F4200EF5B46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,6 +110,8 @@
 		E1EA54A7165E400000EF5B46 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E1372DF716DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.h */,
+				E1372DF816DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m */,
 				E1EA54B8165E40EA00EF5B46 /* Datamodel.h */,
 				E1EA54B9165E40EA00EF5B46 /* Datamodel.m */,
 				E1EA54BA165E40EA00EF5B46 /* UIDocument+ConvenienceMethods.h */,
@@ -192,6 +197,7 @@
 				E1EA54B7165E400000EF5B46 /* snippets_objc.xcdatamodeld in Sources */,
 				E1EA54BC165E40EA00EF5B46 /* Datamodel.m in Sources */,
 				E1EA54BD165E40EA00EF5B46 /* UIDocument+ConvenienceMethods.m in Sources */,
+				E1372DF916DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

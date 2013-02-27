@@ -16,3 +16,6 @@ profile
 
 # vim
 .*.swp
+
+# finder
+.DS_Store
