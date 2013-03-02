@@ -12,5 +12,5 @@
 
 @end
 
-#define STRFormat(format, ...) [NSString stringWithFormat:format, __VA_ARGS__]
+#define StringWithFormat(format, ...) [NSString stringWithFormat:format, __VA_ARGS__]
 

@@ -53,7 +53,7 @@ static void setAssociatedContext(NSThread *thread, NSManagedObjectContext *ctx, 
     return ctx;
 }
 
-- (NSManagedObjectContext *)newChildContext
+- (instancetype)newChildContext
 {
     NSManagedObjectContextConcurrencyType *ct = NSPrivateQueueConcurrencyType;
     if ([NSThread isMainThread])
@@ -63,7 +63,7 @@ static void setAssociatedContext(NSThread *thread, NSManagedObjectContext *ctx, 
     return ctx;
 }
 
-- (NSManagedObjectContext *)newBackgroundChildContext
+- (instancetype)newBackgroundChildContext
 {
     NSManagedObjectContext *ctx = [[NSManagedObjectContext alloc]
                                    initWithConcurrencyType:NSPrivateQueueConcurrencyType];

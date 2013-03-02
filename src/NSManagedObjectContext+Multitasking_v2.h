@@ -10,8 +10,8 @@
 #import <CoreData/CoreData.h>
 
 @interface NSManagedObjectContext (Multitasking)
-+ (instancetype)threadContext;
-- (instancetype)newChildContext;
++ (instancetype)mainContext;
+- (instancetype)newChildContext; // returns Main Concurrency context on main thread Private Concurrency type otherwise
 - (instancetype)newBackgroundChildContext;
 - (id)objectThroughContext:(NSManagedObject *)object;
 - (void)recursiveSaveTrackingErrors:(void (^)(NSError *error))tracker;

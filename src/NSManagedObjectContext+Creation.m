@@ -15,7 +15,7 @@
 }
 
 - (NSPersistentStoreCoordinator *)newPersistentStoreCoordinator {
-    @throw InternalInconsistencyException(STRFormat(@"overwrite %@ in subclass", NSStringFromSelector(_cmd)));
+    @throw InternalInconsistencyException(StringWithFormat(@"overwrite %@ in subclass", NSStringFromSelector(_cmd)));
 }
 
 @end
