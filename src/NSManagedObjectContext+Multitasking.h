@@ -10,11 +10,9 @@
 #import <CoreData/CoreData.h>
 
 @interface NSManagedObjectContext (Multitasking)
-- (id)objectThroughContext:(NSManagedObject *)object;
-+ (NSManagedObjectContext *)threadContext;
++ (instancetype)threadContext; // ??
 - (NSManagedObjectContext *)newChildContext;
-- (void)recursiveSave;
+- (NSManagedObjectContext *)newBackgroundChildContext;
+- (id)objectThroughContext:(NSManagedObject *)object;
+- (void)recursiveSaveTrackingErrors:(void (^)(NSError *error))tracker;
 @end
-
-#define ManagedObjectContextSave(ctx) NSError *e; if (![ctx save:&e]) log_error(e);
-#define ManagedObjectContextRecursiveSave(ctx) NSError *e; if (![ctx recursiveSave:&e]) log_error(e);

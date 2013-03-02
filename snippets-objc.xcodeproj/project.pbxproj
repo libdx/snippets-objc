@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E1372DF916DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m in Sources */ = {isa = PBXBuildFile; fileRef = E1372DF816DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m */; };
+		E13C87A316E21973004D940E /* NSManagedObjectContext+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = E13C87A216E21973004D940E /* NSManagedObjectContext+Creation.m */; };
+		E13C87A616E21B12004D940E /* NSException+Exceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E13C87A516E21B12004D940E /* NSException+Exceptions.m */; };
+		E13C87A916E24ACB004D940E /* NSString+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = E13C87A816E24ACB004D940E /* NSString+Convenience.m */; };
+		E13C87AC16E25923004D940E /* ExampleManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E13C87AB16E25923004D940E /* ExampleManagedObjectContext.m */; };
+		E13C87AF16E25952004D940E /* ExampleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E13C87AD16E25952004D940E /* ExampleModel.xcdatamodeld */; };
 		E1EA5479165E3F4200EF5B46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EA5478165E3F4200EF5B46 /* UIKit.framework */; };
 		E1EA547B165E3F4200EF5B46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EA547A165E3F4200EF5B46 /* Foundation.framework */; };
 		E1EA547D165E3F4200EF5B46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EA547C165E3F4200EF5B46 /* CoreGraphics.framework */; };
@@ -27,6 +32,15 @@
 /* Begin PBXFileReference section */
 		E1372DF716DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Multitasking.h"; sourceTree = "<group>"; };
 		E1372DF816DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Multitasking.m"; sourceTree = "<group>"; };
+		E13C87A116E21973004D940E /* NSManagedObjectContext+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Creation.h"; sourceTree = "<group>"; };
+		E13C87A216E21973004D940E /* NSManagedObjectContext+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Creation.m"; sourceTree = "<group>"; };
+		E13C87A416E21B12004D940E /* NSException+Exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+Exceptions.h"; sourceTree = "<group>"; };
+		E13C87A516E21B12004D940E /* NSException+Exceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+Exceptions.m"; sourceTree = "<group>"; };
+		E13C87A716E24ACB004D940E /* NSString+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Convenience.h"; sourceTree = "<group>"; };
+		E13C87A816E24ACB004D940E /* NSString+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Convenience.m"; sourceTree = "<group>"; };
+		E13C87AA16E25923004D940E /* ExampleManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleManagedObjectContext.h; sourceTree = "<group>"; };
+		E13C87AB16E25923004D940E /* ExampleManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleManagedObjectContext.m; sourceTree = "<group>"; };
+		E13C87AE16E25952004D940E /* ExampleModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleModel.xcdatamodel; sourceTree = "<group>"; };
 		E1EA5474165E3F4200EF5B46 /* snippets-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snippets-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EA5478165E3F4200EF5B46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E1EA547A165E3F4200EF5B46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,6 +126,15 @@
 			children = (
 				E1372DF716DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.h */,
 				E1372DF816DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m */,
+				E13C87A116E21973004D940E /* NSManagedObjectContext+Creation.h */,
+				E13C87A216E21973004D940E /* NSManagedObjectContext+Creation.m */,
+				E13C87AA16E25923004D940E /* ExampleManagedObjectContext.h */,
+				E13C87AB16E25923004D940E /* ExampleManagedObjectContext.m */,
+				E13C87AD16E25952004D940E /* ExampleModel.xcdatamodeld */,
+				E13C87A416E21B12004D940E /* NSException+Exceptions.h */,
+				E13C87A516E21B12004D940E /* NSException+Exceptions.m */,
+				E13C87A716E24ACB004D940E /* NSString+Convenience.h */,
+				E13C87A816E24ACB004D940E /* NSString+Convenience.m */,
 				E1EA54B8165E40EA00EF5B46 /* Datamodel.h */,
 				E1EA54B9165E40EA00EF5B46 /* Datamodel.m */,
 				E1EA54BA165E40EA00EF5B46 /* UIDocument+ConvenienceMethods.h */,
@@ -198,6 +221,11 @@
 				E1EA54BC165E40EA00EF5B46 /* Datamodel.m in Sources */,
 				E1EA54BD165E40EA00EF5B46 /* UIDocument+ConvenienceMethods.m in Sources */,
 				E1372DF916DE703B00ED95E7 /* NSManagedObjectContext+Multitasking.m in Sources */,
+				E13C87A316E21973004D940E /* NSManagedObjectContext+Creation.m in Sources */,
+				E13C87A616E21B12004D940E /* NSException+Exceptions.m in Sources */,
+				E13C87A916E24ACB004D940E /* NSString+Convenience.m in Sources */,
+				E13C87AC16E25923004D940E /* ExampleManagedObjectContext.m in Sources */,
+				E13C87AF16E25952004D940E /* ExampleModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +339,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		E13C87AD16E25952004D940E /* ExampleModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E13C87AE16E25952004D940E /* ExampleModel.xcdatamodel */,
+			);
+			currentVersion = E13C87AE16E25952004D940E /* ExampleModel.xcdatamodel */;
+			path = ExampleModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		E1EA54AD165E400000EF5B46 /* snippets_objc.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

@@ -13,4 +13,6 @@
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
     #import "log.h"
+    #import "NSException+Exceptions.h"
+    #import "NSString+Convenience.h"
 #endif
