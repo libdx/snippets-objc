@@ -21,8 +21,6 @@
 		FILENAME, __PRETTY_FUNCTION__, __LINE__, [e localizedDescription])
 	#define log_error_v(e, ...) NSLog(@"[ERROR] %s:%s:%d %@. %@", \
 		FILENAME, __PRETTY_FUNCTION__, __LINE__, [e localizedDescription], [NSString stringWithFormat:__VA_ARGS__])
-
-    #define LogOnError(e, statement) {NSError *(e); if (!statement) log_error(e);}
 #endif // DEBUG
 #ifdef RELEASE
 	#define trace(...)
@@ -31,6 +29,6 @@
 	#define log_warning(...)
 	#define log_error(e)
 	#define log_error_v(e, ...)
-    #define LogOnError(e, statement)
 #endif // RELEASE
 
+#define LogOnError(e, statement) {NSError *(e); if (!statement) log_error(e);}
