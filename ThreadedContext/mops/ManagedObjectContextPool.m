@@ -10,6 +10,8 @@
 
 #import "ManagedObjectContextPool.h"
 
+// TODO: user |-threadDictionary|, Luke
+
 @interface NSThread (ManagedPool)
 - (NSManagedObjectContext *)associatedContext;
 - (void)setAssociatedContext:(NSManagedObjectContext *)ctx;
