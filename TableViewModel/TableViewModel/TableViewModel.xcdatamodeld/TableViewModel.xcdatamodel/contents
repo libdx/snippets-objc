@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="11E53" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TableViewModel" representedClassName="TableViewModel" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TableViewSection" inverseName="table" inverseEntity="TableViewSection" syncable="YES"/>
+    </entity>
+    <entity name="TableViewRow" representedClassName="TableViewRow" syncable="YES">
+        <attribute name="boundObject" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="cellReuseIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="didSelectCallback" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="shouldIndentWhileEditing" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="section" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TableViewSection" inverseName="rows" inverseEntity="TableViewSection" syncable="YES"/>
+    </entity>
+    <entity name="TableViewSection" representedClassName="TableViewSection" syncable="YES">
+        <attribute name="position" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="rows" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TableViewRow" inverseName="section" inverseEntity="TableViewRow" syncable="YES"/>
+        <relationship name="table" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TableViewModel" inverseName="sections" inverseEntity="TableViewModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TableViewModel" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="TableViewSection" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="TableViewRow" positionX="160" positionY="192" width="128" height="135"/>
+    </elements>
+</model>
